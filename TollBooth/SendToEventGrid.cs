@@ -26,7 +26,7 @@ namespace TollBooth
         {
             // Will send to one of two routes, depending on success.
             // Event listeners will filter and act on events they need to
-            // process (save to database, move to manual checkup queue, etc.)
+            // proces (save to database, move to manual checkup queue, etc.)
             if (data.LicensePlateFound)
             {
                 // TODO 3: Modify send method to include the proper eventType name value for saving plate data.
