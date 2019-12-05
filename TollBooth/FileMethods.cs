@@ -17,7 +17,8 @@ namespace TollBooth
     {
         private readonly CloudBlobClient _blobClient;
         private readonly string _containerName = Environment.GetEnvironmentVariable("exportCsvContainerName");
-        private readonly string _blobStorageConnection = Environment.GetEnvironmentVariable("blobStorageConnection");
+        //private readonly string _blobStorageConnection = Environment.GetEnvironmentVariable("blobStorageConnection");
+        private readonly string _blobStorageConnection = "DefaultEndpointsProtocol=https;AccountName=tollboothstoragemain;AccountKey=KTWp+jy7noLwOQZYo1b2aTbL0CCzQY3uhKfzoOiSzSgbgEvEB6ylkrZHajs/o1Db287TGv3gxll1DijsNPNvdw==;EndpointSuffix=core.windows.net";
         private readonly ILogger _log;
 
         public FileMethods(ILogger log)
